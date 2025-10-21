@@ -3,8 +3,8 @@
 
 #include <string>
 #include <vector>
-#include "Account.h" // Corrected path
-#include "Book.h"    // Corrected path
+#include "Account.h" 
+#include "Book.h"
 
 class Member : public Account {
  public:
@@ -22,8 +22,10 @@ class Member : public Account {
   void addBorrowedBook(Book* book);
 
  protected:
+ // Vector with pointers to book objects
   std::vector<Book*> currently_borrowed_;
+  // Only one copy of this variable in the entire class (static)
   static const int kMaxBooks_ = 5;
 };
 
-#endif  // INCLUDE_MEMBER_H_
+#endif  

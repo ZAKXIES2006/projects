@@ -1,7 +1,7 @@
 #ifndef INCLUDE_PREMIUM_MEMBER_H_
 #define INCLUDE_PREMIUM_MEMBER_H_
 
-#include "Member.h" // Corrected path
+#include "Member.h"
 
 class PremiumMember : public Member {
  public:
@@ -13,7 +13,8 @@ class PremiumMember : public Member {
   std::string getAccountType() const override { return "PremiumMember"; }
 
  private:
+ // Only one copy of this variable in this class
   static const int kMaxBooks_ = 10;
 };
 
-#endif  // INCLUDE_PREMIUM_MEMBER_H_
+#endif

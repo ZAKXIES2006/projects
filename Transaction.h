@@ -3,8 +3,8 @@
 
 #include <string>
 #include <ctime>
-#include "Book.h"   // Corrected path
-#include "Member.h" // Corrected path
+#include "Book.h"
+#include "Member.h"
 
 class Transaction {
  public:
@@ -18,4 +18,4 @@ class Transaction {
   Member* member_;
 };
 
-#endif  // INCLUDE_TRANSACTION_H_
+#endif
