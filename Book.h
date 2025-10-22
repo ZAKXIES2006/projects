@@ -1,8 +1,8 @@
 #ifndef INCLUDE_BOOK_H_
 #define INCLUDE_BOOK_H_
 
-#include <string>
 #include <iostream>
+#include <string>
 
 class Book {
  public:
@@ -24,4 +24,4 @@ class Book {
   bool is_available_;
 };
 
-#endif  // INCLUDE_BOOK_H_
+#endif

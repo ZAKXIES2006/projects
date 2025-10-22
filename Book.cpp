@@ -1,4 +1,5 @@
-#include "Book.h" // Corrected path
+#include "Book.h"
+
 #include <iostream>
 #include <sstream>
 
@@ -17,7 +18,7 @@ void Book::printDetails() const {
             << "  > Status: " << (is_available_ ? "Available" : "Borrowed")
             << std::endl;
 }
-bool Book::borrowBook() {
+bool Book::borrowBook() { // Change the availability status of the book when borrowed
   if (is_available_) {
     is_available_ = false;
     return true;

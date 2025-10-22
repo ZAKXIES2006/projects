@@ -1,8 +1,9 @@
 #ifndef INCLUDE_TRANSACTION_H_
 #define INCLUDE_TRANSACTION_H_
 
-#include <string>
 #include <ctime>
+#include <string>
+
 #include "Book.h"
 #include "Member.h"
 

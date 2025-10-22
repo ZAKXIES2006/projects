@@ -1,7 +1,7 @@
 #ifndef INCLUDE_ADMIN_H_
 #define INCLUDE_ADMIN_H_
 
-#include "Account.h" // Corrected path
+#include "Account.h"
 
 class Admin : public Account {
  public:
@@ -14,4 +14,4 @@ class Admin : public Account {
   std::string getAccountType() const override { return "Admin"; }
 };
 
-#endif  // INCLUDE_ADMIN_H_
+#endif

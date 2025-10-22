@@ -51,4 +51,4 @@ class LibrarySystem {
   void recordTransaction(const std::string& type, Book* book, Member* member);
 };
 
-#endif 
+#endif

@@ -13,7 +13,7 @@ class PremiumMember : public Member {
   std::string getAccountType() const override { return "PremiumMember"; }
 
  private:
- // Only one copy of this variable in this class
+  // Only one copy of this variable in this class
   static const int kMaxBooks_ = 10;
 };
 
