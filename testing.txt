@@ -1,0 +1,157 @@
+Normal Operation Tests:
+
+    Testing admin account functionality
+
+    System loaded 2 books and 3 accounts from file.
+
+    ===== Library Main Menu =====
+    1. Login
+    2. Exit
+    ===========================
+    Enter choice: 1
+
+    Enter User ID: admin
+    Enter Password: password
+    Login successful. Welcome, admin!
+
+    ===== Admin Menu (Logged in as admin) =====
+    1. Add New Book
+    2. Add New Member Account
+    3. View All Member Details
+    4. Logout
+    ==========================================
+    Enter choice: 1
+
+    Enter book ISBN: 234
+    Enter book title: title
+    Enter book author: author 
+    Success: Book 'title' has been added.
+
+    ===== Admin Menu (Logged in as admin) =====
+    1. Add New Book
+    2. Add New Member Account
+    3. View All Member Details
+    4. Logout
+    ==========================================
+    Enter choice: 2
+
+    Enter new member ID: 2
+    Error: An account with ID '2' already exists.
+
+    ===== Admin Menu (Logged in as admin) =====
+    1. Add New Book
+    2. Add New Member Account
+    3. View All Member Details
+    4. Logout
+    ==========================================
+    Enter choice: 2
+
+    Enter new member ID: 3
+    Enter new member's password: password
+    Enter account type (1=Standard, 2=Premium): 1
+    Success: Standard Member '3' created.
+
+    ===== Admin Menu (Logged in as admin) =====
+    1. Add New Book
+    2. Add New Member Account
+    3. View All Member Details
+    4. Logout
+    ==========================================
+    Enter choice: 3
+
+    --- All Member Accounts ---
+
+    --- Member Account ---
+    ID: 1
+    Status: Standard Member
+    Books Borrowed (1/5):
+    - Book1 (ISBN: 123)
+    ---------------------------
+    --- Premium Member Account ---
+    ID: 2
+    Status: *PREMIUM MEMBER*
+    Books Borrowed (0/10):
+    (None)
+    ---------------------------
+
+    --- Member Account ---
+    ID: 3
+    Status: Standard Member
+    Books Borrowed (0/5):
+    (None)
+    ---------------------------
+
+    ===== Admin Menu (Logged in as admin) =====
+    1. Add New Book
+    2. Add New Member Account
+    3. View All Member Details
+    4. Logout
+    ==========================================
+    Enter choice: 4
+    Logging out admin.
+
+    ===== Library Main Menu =====
+    1. Login
+    2. Exit
+    ===========================
+    Enter choice: 2
+    Saving state and shutting down. Goodbye!
+    System state has been saved to data files.
+
+
+    Testing user account functionality
+
+    System loaded 2 books and 3 accounts from file.
+
+    ===== Library Main Menu =====
+    1. Login
+    2. Exit
+    ===========================
+    Enter choice: 1
+
+    Enter User ID: 1
+    Enter Password: password
+    Login successful. Welcome, 1!
+
+    ===== Member Menu (Logged in as 1) =====
+    1. Borrow a Book
+    2. Return a Book
+    3. View My Account Details
+    4. Logout
+    ==========================================
+    Enter choice: 1
+
+    Enter ISBN of the book to borrow: 123
+    Success: You have borrowed 'Book1'.
+
+    ===== Member Menu (Logged in as 1) =====
+    1. Borrow a Book
+    2. Return a Book
+    3. View My Account Details
+    4. Logout
+    ==========================================
+    Enter choice: 3
+
+    --- Member Account ---
+    ID: 1
+    Status: Standard Member
+    Books Borrowed (1/5):
+    - Book1 (ISBN: 123)
+
+    ===== Member Menu (Logged in as 1) =====
+    1. Borrow a Book
+    2. Return a Book
+    3. View My Account Details
+    4. Logout
+    ==========================================
+    Enter choice: 4
+    Logging out 1.
+
+    ===== Library Main Menu =====
+    1. Login
+    2. Exit
+    ===========================
+    Enter choice: 2
+    Saving state and shutting down. Goodbye!
+    System state has been saved to data files.
+
